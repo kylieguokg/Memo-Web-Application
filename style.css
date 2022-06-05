@@ -1,0 +1,161 @@
+* {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+
+}
+
+.display_box {
+    width: 960px;
+    height: 500px;
+    background-color:transparent;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+    position: absolute;
+
+}
+
+
+#indexMenu {
+    justify-content: center;
+}
+
+.memo {
+    width: 650px;
+    height: 500px;
+    background-color:green;
+    border: transparent;
+    margin: 50px;
+    display: inline;
+    font-size: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+
+}
+
+.bar {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+ /* W3Schools (n.d.) How TO - Side Navigation https://www.w3schools.com/howto/howto_js_sidenav.asp */
+#settings {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #E6E6FA; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    text-align: center;
+}
+
+#preferences {
+    text-align: left;
+}
+
+#preferences li {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button{
+    border-radius: 0px;
+    border: 2px solid black;
+    background-color: transparent;
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+
+button:disabled {
+    border: 2px solid lightgray;
+    color: lightgray;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#btn_home_settings{
+    font-size: 50px;
+}
+
+#btn_open_settings {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#btn_close_settings {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#saveButton {
+    display: none;
+}
+
+input[type="number"] {
+
+   width: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#wordCount, #pageNumber {
+
+	position: relative;
+    top: 290px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    width: 1000px;
+    height: 650px;
+    border: 1px solid #000000;
+    background-color:transparent;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+}
+
+iframe {
+    display: none;
+}

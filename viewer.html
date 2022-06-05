@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel = "stylesheet" href = "style.css">
+        <script src="js/styling.js"></script>
+    </head>
+    <body>
+
+        <a href="index.html" id = "btn_home_settings" > &#127968; </a>
+
+        <div class="center"> 
+            <ul class = "display_box" id = "memoView"> </ul>  
+            <label id="pageNumber"> PAGE NUMBER: 0 </label> 
+            <label id="wordCount">WORD COUNT: 0 </label> 
+        </div>
+       
+        <div class = "bar">
+            <button id = "btn_prev">PREV</button>
+            <button onclick="getFile()">
+                    LOAD FILE
+            </button>
+            <button id="btn_save_file"> SAVE FILE </button>
+            <button id="btn_next"> NEXT </button>
+        </div> 
+    
+
+        <a onclick = "openSettings()" id = "btn_open_settings"> &#9881; 
+        </a>
+
+        <div id = "settings">
+            
+
+        <form id="preferences">
+
+            <a onclick = "closeSettings()" id = "btn_close_settings"> &times;
+            </a>
+
+            <ul>
+                <li>
+                    <label for="memoColour">Memo colour</label>
+                    <input type="color" value="#ffffff" name="memoColour" id="memoColour">
+                </li>
+                <li>
+                    <label for="textSize">Text size (in px)</label>
+                    <input type="number" name="textSize" id="textSize" min="1">
+                </li>
+                <li>
+                    <label for="textColour">Text colour</label>
+                    <select name="textColour" id="textColour">
+                        <option value="#000000" type="color" selected>Black</option>
+                        <option value="#ffffff" type="color">White</option>
+                    </select>
+                </li>
+            </ul>
+        
+        </form>
+
+        <button>
+            <label for="saveButton">
+                SAVE CHANGES
+            </label>
+        </button> 
+        <input id="saveButton" type="submit" value="Save changes">
+        
+        </div>
+    </body>
+
+    <script src = "js/openMemo.js">  </script>
+    <script src = "js/file.js">  </script>
+    
+</html>
